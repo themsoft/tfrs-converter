@@ -78,4 +78,4 @@ tfrs-converter/
 
 ## Lisans
 
-MIT
+AGPL-3.0 — Detaylar için [LICENSE](LICENSE) dosyasına bakın.
