@@ -1,0 +1,1012 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "TDHP (Tek Duzen Hesap Plani) to IFRS/TFRS mapping configuration",
+    "ifrs_categories": {
+      "current_assets": { "tr": "Donen Varliklar", "en": "Current Assets" },
+      "non_current_assets": { "tr": "Duran Varliklar", "en": "Non-current Assets" },
+      "current_liabilities": { "tr": "Kisa Vadeli Yukumlulukler", "en": "Current Liabilities" },
+      "non_current_liabilities": { "tr": "Uzun Vadeli Yukumlulukler", "en": "Non-current Liabilities" },
+      "equity": { "tr": "Ozkaynaklar", "en": "Equity" },
+      "revenue": { "tr": "Hasilat", "en": "Revenue" },
+      "cost_of_sales": { "tr": "Satis Maliyeti", "en": "Cost of Sales" },
+      "operating_expenses": { "tr": "Faaliyet Giderleri", "en": "Operating Expenses" },
+      "finance_income": { "tr": "Finansman Gelirleri", "en": "Finance Income" },
+      "finance_costs": { "tr": "Finansman Giderleri", "en": "Finance Costs" },
+      "other_income": { "tr": "Diger Gelirler", "en": "Other Income" },
+      "other_expense": { "tr": "Diger Giderler", "en": "Other Expenses" },
+      "tax_expense": { "tr": "Vergi Gideri", "en": "Tax Expense" }
+    }
+  },
+  "accounts": {
+    "100": {
+      "tdhp_name": "Kasa",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Cash and Cash Equivalents",
+      "ifrs_line_tr": "Nakit ve Nakit Benzerleri",
+      "balance_type": "debit"
+    },
+    "101": {
+      "tdhp_name": "Alinan Cekler",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Trade Receivables",
+      "ifrs_line_tr": "Ticari Alacaklar",
+      "balance_type": "debit"
+    },
+    "102": {
+      "tdhp_name": "Bankalar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Cash and Cash Equivalents",
+      "ifrs_line_tr": "Nakit ve Nakit Benzerleri",
+      "balance_type": "debit"
+    },
+    "103": {
+      "tdhp_name": "Verilen Cekler ve Odeme Emirleri (-)",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Cash and Cash Equivalents",
+      "ifrs_line_tr": "Nakit ve Nakit Benzerleri",
+      "balance_type": "credit"
+    },
+    "108": {
+      "tdhp_name": "Diger Hazir Degerler",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Cash and Cash Equivalents",
+      "ifrs_line_tr": "Nakit ve Nakit Benzerleri",
+      "balance_type": "debit"
+    },
+    "110": {
+      "tdhp_name": "Hisse Senetleri",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Financial Assets at Fair Value",
+      "ifrs_line_tr": "Gercege Uygun Degerden Finansal Varliklar",
+      "balance_type": "debit"
+    },
+    "111": {
+      "tdhp_name": "Ozel Kesim Tahvil Senet ve Bonolari",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Financial Assets at Fair Value",
+      "ifrs_line_tr": "Gercege Uygun Degerden Finansal Varliklar",
+      "balance_type": "debit"
+    },
+    "112": {
+      "tdhp_name": "Kamu Kesimi Tahvil Senet ve Bonolari",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Financial Assets at Fair Value",
+      "ifrs_line_tr": "Gercege Uygun Degerden Finansal Varliklar",
+      "balance_type": "debit"
+    },
+    "120": {
+      "tdhp_name": "Alicilar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Trade Receivables",
+      "ifrs_line_tr": "Ticari Alacaklar",
+      "balance_type": "debit"
+    },
+    "121": {
+      "tdhp_name": "Alacak Senetleri",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Trade Receivables",
+      "ifrs_line_tr": "Ticari Alacaklar",
+      "balance_type": "debit"
+    },
+    "122": {
+      "tdhp_name": "Alacak Senetleri Reeskontu (-)",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Trade Receivables",
+      "ifrs_line_tr": "Ticari Alacaklar",
+      "balance_type": "credit"
+    },
+    "126": {
+      "tdhp_name": "Verilen Depozito ve Teminatlar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Other Receivables",
+      "ifrs_line_tr": "Diger Alacaklar",
+      "balance_type": "debit"
+    },
+    "128": {
+      "tdhp_name": "Supheli Ticari Alacaklar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Trade Receivables",
+      "ifrs_line_tr": "Ticari Alacaklar",
+      "balance_type": "debit"
+    },
+    "129": {
+      "tdhp_name": "Supheli Ticari Alacaklar Karsiligi (-)",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Trade Receivables",
+      "ifrs_line_tr": "Ticari Alacaklar",
+      "balance_type": "credit"
+    },
+    "131": {
+      "tdhp_name": "Ortaklardan Alacaklar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Related Party Receivables",
+      "ifrs_line_tr": "Iliskili Taraf Alacaklari",
+      "balance_type": "debit"
+    },
+    "135": {
+      "tdhp_name": "Personelden Alacaklar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Other Receivables",
+      "ifrs_line_tr": "Diger Alacaklar",
+      "balance_type": "debit"
+    },
+    "136": {
+      "tdhp_name": "Diger Cesitli Alacaklar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Other Receivables",
+      "ifrs_line_tr": "Diger Alacaklar",
+      "balance_type": "debit"
+    },
+    "150": {
+      "tdhp_name": "Ilk Madde ve Malzeme",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Inventories",
+      "ifrs_line_tr": "Stoklar",
+      "balance_type": "debit"
+    },
+    "151": {
+      "tdhp_name": "Yari Mamuller - Uretim",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Inventories",
+      "ifrs_line_tr": "Stoklar",
+      "balance_type": "debit"
+    },
+    "152": {
+      "tdhp_name": "Mamuller",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Inventories",
+      "ifrs_line_tr": "Stoklar",
+      "balance_type": "debit"
+    },
+    "153": {
+      "tdhp_name": "Ticari Mallar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Inventories",
+      "ifrs_line_tr": "Stoklar",
+      "balance_type": "debit"
+    },
+    "157": {
+      "tdhp_name": "Diger Stoklar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Inventories",
+      "ifrs_line_tr": "Stoklar",
+      "balance_type": "debit"
+    },
+    "158": {
+      "tdhp_name": "Stok Deger Dusuklu Karsiligi (-)",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Inventories",
+      "ifrs_line_tr": "Stoklar",
+      "balance_type": "credit"
+    },
+    "159": {
+      "tdhp_name": "Verilen Siparis Avanslari",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Prepayments",
+      "ifrs_line_tr": "Pesin Odenmis Giderler",
+      "balance_type": "debit"
+    },
+    "170": {
+      "tdhp_name": "Yillara Yaygin Insaat ve Onarim Maliyetleri",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Contract Assets",
+      "ifrs_line_tr": "Sozlesme Varliklari",
+      "balance_type": "debit"
+    },
+    "180": {
+      "tdhp_name": "Gelecek Aylara Ait Giderler",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Prepayments",
+      "ifrs_line_tr": "Pesin Odenmis Giderler",
+      "balance_type": "debit"
+    },
+    "181": {
+      "tdhp_name": "Gelir Tahakkuklari",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Other Receivables",
+      "ifrs_line_tr": "Diger Alacaklar",
+      "balance_type": "debit"
+    },
+    "190": {
+      "tdhp_name": "Devreden KDV",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Other Current Assets",
+      "ifrs_line_tr": "Diger Donen Varliklar",
+      "balance_type": "debit"
+    },
+    "191": {
+      "tdhp_name": "Indirilecek KDV",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Other Current Assets",
+      "ifrs_line_tr": "Diger Donen Varliklar",
+      "balance_type": "debit"
+    },
+    "192": {
+      "tdhp_name": "Diger KDV",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Other Current Assets",
+      "ifrs_line_tr": "Diger Donen Varliklar",
+      "balance_type": "debit"
+    },
+    "193": {
+      "tdhp_name": "Pesin Odenen Vergiler ve Fonlar",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Current Tax Assets",
+      "ifrs_line_tr": "Donem Vergi Varligi",
+      "balance_type": "debit"
+    },
+    "195": {
+      "tdhp_name": "Is Avanslari",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Prepayments",
+      "ifrs_line_tr": "Pesin Odenmis Giderler",
+      "balance_type": "debit"
+    },
+    "196": {
+      "tdhp_name": "Personel Avanslari",
+      "ifrs_category": "current_assets",
+      "ifrs_line": "Other Receivables",
+      "ifrs_line_tr": "Diger Alacaklar",
+      "balance_type": "debit"
+    },
+    "240": {
+      "tdhp_name": "Bagla Menkul Kiymetler",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Investments in Subsidiaries",
+      "ifrs_line_tr": "Bagli Ortakliklar",
+      "balance_type": "debit"
+    },
+    "242": {
+      "tdhp_name": "Istirakler",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Investments in Associates",
+      "ifrs_line_tr": "Istirakler",
+      "balance_type": "debit"
+    },
+    "245": {
+      "tdhp_name": "Bagla Ortakliklar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Investments in Subsidiaries",
+      "ifrs_line_tr": "Bagli Ortakliklar",
+      "balance_type": "debit"
+    },
+    "250": {
+      "tdhp_name": "Arazi ve Arsalar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "251": {
+      "tdhp_name": "Yer Alti ve Yer Ustu Duzenleri",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "252": {
+      "tdhp_name": "Binalar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "253": {
+      "tdhp_name": "Tesis, Makine ve Cihazlar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "254": {
+      "tdhp_name": "Tasitlar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "255": {
+      "tdhp_name": "Demirbaslar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "256": {
+      "tdhp_name": "Diger Maddi Duran Varliklar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "257": {
+      "tdhp_name": "Birikmis Amortismanlar (-)",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "credit"
+    },
+    "258": {
+      "tdhp_name": "Yapilmakta Olan Yatirimlar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Property, Plant and Equipment",
+      "ifrs_line_tr": "Maddi Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "259": {
+      "tdhp_name": "Verilen Avanslar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Prepayments",
+      "ifrs_line_tr": "Pesin Odenmis Giderler",
+      "balance_type": "debit"
+    },
+    "260": {
+      "tdhp_name": "Haklar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Intangible Assets",
+      "ifrs_line_tr": "Maddi Olmayan Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "261": {
+      "tdhp_name": "Serefiye",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Goodwill",
+      "ifrs_line_tr": "Serefiye",
+      "balance_type": "debit"
+    },
+    "262": {
+      "tdhp_name": "Kuruluş ve Orgutlenme Giderleri",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Intangible Assets",
+      "ifrs_line_tr": "Maddi Olmayan Duran Varliklar",
+      "balance_type": "debit",
+      "ifrs_note": "IFRS does not allow capitalization — may need reclassification to expense"
+    },
+    "263": {
+      "tdhp_name": "Arastirma ve Gelistirme Giderleri",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Intangible Assets",
+      "ifrs_line_tr": "Maddi Olmayan Duran Varliklar",
+      "balance_type": "debit",
+      "ifrs_note": "Only development costs meeting IAS 38 criteria can be capitalized"
+    },
+    "264": {
+      "tdhp_name": "Ozel Maliyetler",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Intangible Assets",
+      "ifrs_line_tr": "Maddi Olmayan Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "267": {
+      "tdhp_name": "Diger Maddi Olmayan Duran Varliklar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Intangible Assets",
+      "ifrs_line_tr": "Maddi Olmayan Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "268": {
+      "tdhp_name": "Birikmis Itfalar (Amortismanlar) (-)",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Intangible Assets",
+      "ifrs_line_tr": "Maddi Olmayan Duran Varliklar",
+      "balance_type": "credit"
+    },
+    "271": {
+      "tdhp_name": "Arama Giderleri",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Other Non-current Assets",
+      "ifrs_line_tr": "Diger Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "280": {
+      "tdhp_name": "Gelecek Yillara Ait Giderler",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Prepayments",
+      "ifrs_line_tr": "Pesin Odenmis Giderler",
+      "balance_type": "debit"
+    },
+    "281": {
+      "tdhp_name": "Gelir Tahakkuklari",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Other Non-current Assets",
+      "ifrs_line_tr": "Diger Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "291": {
+      "tdhp_name": "Gelecek Yillarda Indirilecek KDV",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Other Non-current Assets",
+      "ifrs_line_tr": "Diger Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "292": {
+      "tdhp_name": "Diger KDV",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Other Non-current Assets",
+      "ifrs_line_tr": "Diger Duran Varliklar",
+      "balance_type": "debit"
+    },
+    "295": {
+      "tdhp_name": "Pesin Odenen Vergiler ve Fonlar",
+      "ifrs_category": "non_current_assets",
+      "ifrs_line": "Deferred Tax Assets",
+      "ifrs_line_tr": "Ertelenmis Vergi Varligi",
+      "balance_type": "debit"
+    },
+    "300": {
+      "tdhp_name": "Banka Kredileri",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Short-term Borrowings",
+      "ifrs_line_tr": "Kisa Vadeli Borclanmalar",
+      "balance_type": "credit"
+    },
+    "303": {
+      "tdhp_name": "Uzun Vadeli Kredilerin Anapara Taksitleri ve Faizleri",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Current Portion of Long-term Borrowings",
+      "ifrs_line_tr": "Uzun Vadeli Borclanmalarin Kisa Vadeli Kismi",
+      "balance_type": "credit"
+    },
+    "320": {
+      "tdhp_name": "Saticilar",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Trade Payables",
+      "ifrs_line_tr": "Ticari Borclar",
+      "balance_type": "credit"
+    },
+    "321": {
+      "tdhp_name": "Borc Senetleri",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Trade Payables",
+      "ifrs_line_tr": "Ticari Borclar",
+      "balance_type": "credit"
+    },
+    "322": {
+      "tdhp_name": "Borc Senetleri Reeskontu (-)",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Trade Payables",
+      "ifrs_line_tr": "Ticari Borclar",
+      "balance_type": "debit"
+    },
+    "326": {
+      "tdhp_name": "Alinan Depozito ve Teminatlar",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Other Payables",
+      "ifrs_line_tr": "Diger Borclar",
+      "balance_type": "credit"
+    },
+    "335": {
+      "tdhp_name": "Personele Borclar",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Employee Benefit Obligations",
+      "ifrs_line_tr": "Calisan Haklarina Iliskin Yukumlulukler",
+      "balance_type": "credit"
+    },
+    "336": {
+      "tdhp_name": "Diger Cesitli Borclar",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Other Payables",
+      "ifrs_line_tr": "Diger Borclar",
+      "balance_type": "credit"
+    },
+    "340": {
+      "tdhp_name": "Alinan Avanslar",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Contract Liabilities",
+      "ifrs_line_tr": "Sozlesme Yukumlulukleri",
+      "balance_type": "credit"
+    },
+    "350": {
+      "tdhp_name": "Yillara Yaygin Insaat Hakedis Bedelleri",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Contract Liabilities",
+      "ifrs_line_tr": "Sozlesme Yukumlulukleri",
+      "balance_type": "credit"
+    },
+    "360": {
+      "tdhp_name": "Odenecek Vergi ve Fonlar",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Current Tax Liabilities",
+      "ifrs_line_tr": "Odenecek Vergiler",
+      "balance_type": "credit"
+    },
+    "361": {
+      "tdhp_name": "Odenecek Sosyal Guvenlik Kesintileri",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Employee Benefit Obligations",
+      "ifrs_line_tr": "Calisan Haklarina Iliskin Yukumlulukler",
+      "balance_type": "credit"
+    },
+    "368": {
+      "tdhp_name": "Vadesi Gecmis Ertelenmis veya Taksitlendirilmis Vergi",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Current Tax Liabilities",
+      "ifrs_line_tr": "Odenecek Vergiler",
+      "balance_type": "credit"
+    },
+    "370": {
+      "tdhp_name": "Donem Kari Vergi ve Diger Yasal Yukumluluk Karsiliklari",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Current Tax Liabilities",
+      "ifrs_line_tr": "Donem Vergi Yukumlulukleri",
+      "balance_type": "credit"
+    },
+    "371": {
+      "tdhp_name": "Donem Karinin Pesin Odenen Vergi ve Diger Yuk. (-)",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Current Tax Liabilities",
+      "ifrs_line_tr": "Donem Vergi Yukumlulukleri",
+      "balance_type": "debit"
+    },
+    "372": {
+      "tdhp_name": "Kidem Tazminati Karsiligi",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Provisions",
+      "ifrs_line_tr": "Karsiliklar",
+      "balance_type": "credit"
+    },
+    "373": {
+      "tdhp_name": "Maliyet Giderleri Karsiligi",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Provisions",
+      "ifrs_line_tr": "Karsiliklar",
+      "balance_type": "credit"
+    },
+    "379": {
+      "tdhp_name": "Diger Borc ve Gider Karsiliklari",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Provisions",
+      "ifrs_line_tr": "Karsiliklar",
+      "balance_type": "credit"
+    },
+    "380": {
+      "tdhp_name": "Gelecek Aylara Ait Gelirler",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Deferred Revenue",
+      "ifrs_line_tr": "Ertelenmis Gelirler",
+      "balance_type": "credit"
+    },
+    "381": {
+      "tdhp_name": "Gider Tahakkuklari",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Accrued Expenses",
+      "ifrs_line_tr": "Tahakkuk Etmis Giderler",
+      "balance_type": "credit"
+    },
+    "391": {
+      "tdhp_name": "Hesaplanan KDV",
+      "ifrs_category": "current_liabilities",
+      "ifrs_line": "Other Current Liabilities",
+      "ifrs_line_tr": "Diger Kisa Vadeli Yukumlulukler",
+      "balance_type": "credit"
+    },
+    "400": {
+      "tdhp_name": "Banka Kredileri",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Long-term Borrowings",
+      "ifrs_line_tr": "Uzun Vadeli Borclanmalar",
+      "balance_type": "credit"
+    },
+    "405": {
+      "tdhp_name": "Cikarilmis Tahviller",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Long-term Borrowings",
+      "ifrs_line_tr": "Uzun Vadeli Borclanmalar",
+      "balance_type": "credit"
+    },
+    "420": {
+      "tdhp_name": "Saticilar",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Long-term Trade Payables",
+      "ifrs_line_tr": "Uzun Vadeli Ticari Borclar",
+      "balance_type": "credit"
+    },
+    "421": {
+      "tdhp_name": "Borc Senetleri",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Long-term Trade Payables",
+      "ifrs_line_tr": "Uzun Vadeli Ticari Borclar",
+      "balance_type": "credit"
+    },
+    "422": {
+      "tdhp_name": "Borc Senetleri Reeskontu (-)",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Long-term Trade Payables",
+      "ifrs_line_tr": "Uzun Vadeli Ticari Borclar",
+      "balance_type": "debit"
+    },
+    "440": {
+      "tdhp_name": "Alinan Avanslar",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Contract Liabilities",
+      "ifrs_line_tr": "Sozlesme Yukumlulukleri",
+      "balance_type": "credit"
+    },
+    "472": {
+      "tdhp_name": "Kidem Tazminati Karsiligi",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Employee Benefit Obligations",
+      "ifrs_line_tr": "Calisan Haklarina Iliskin Yukumlulukler",
+      "balance_type": "credit"
+    },
+    "480": {
+      "tdhp_name": "Gelecek Yillara Ait Gelirler",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Deferred Revenue",
+      "ifrs_line_tr": "Ertelenmis Gelirler",
+      "balance_type": "credit"
+    },
+    "481": {
+      "tdhp_name": "Gider Tahakkuklari",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Accrued Expenses",
+      "ifrs_line_tr": "Tahakkuk Etmis Giderler",
+      "balance_type": "credit"
+    },
+    "492": {
+      "tdhp_name": "Gelecek Yillara Ertelenen veya Terkin Edilen KDV",
+      "ifrs_category": "non_current_liabilities",
+      "ifrs_line": "Other Non-current Liabilities",
+      "ifrs_line_tr": "Diger Uzun Vadeli Yukumlulukler",
+      "balance_type": "credit"
+    },
+    "500": {
+      "tdhp_name": "Sermaye",
+      "ifrs_category": "equity",
+      "ifrs_line": "Share Capital",
+      "ifrs_line_tr": "Odenenmis Sermaye",
+      "balance_type": "credit"
+    },
+    "501": {
+      "tdhp_name": "Odenmemis Sermaye (-)",
+      "ifrs_category": "equity",
+      "ifrs_line": "Share Capital",
+      "ifrs_line_tr": "Odenenmis Sermaye",
+      "balance_type": "debit"
+    },
+    "520": {
+      "tdhp_name": "MDV Yeniden Degerleme Artislari",
+      "ifrs_category": "equity",
+      "ifrs_line": "Revaluation Surplus",
+      "ifrs_line_tr": "Yeniden Degerleme Artislari",
+      "balance_type": "credit"
+    },
+    "521": {
+      "tdhp_name": "MODV Yeniden Degerleme Artislari",
+      "ifrs_category": "equity",
+      "ifrs_line": "Revaluation Surplus",
+      "ifrs_line_tr": "Yeniden Degerleme Artislari",
+      "balance_type": "credit"
+    },
+    "540": {
+      "tdhp_name": "Yasal Yedekler",
+      "ifrs_category": "equity",
+      "ifrs_line": "Retained Earnings",
+      "ifrs_line_tr": "Dagitilmamis Karlar",
+      "balance_type": "credit"
+    },
+    "541": {
+      "tdhp_name": "Statu Yedekleri",
+      "ifrs_category": "equity",
+      "ifrs_line": "Retained Earnings",
+      "ifrs_line_tr": "Dagitilmamis Karlar",
+      "balance_type": "credit"
+    },
+    "542": {
+      "tdhp_name": "Olaganustu Yedekler",
+      "ifrs_category": "equity",
+      "ifrs_line": "Retained Earnings",
+      "ifrs_line_tr": "Dagitilmamis Karlar",
+      "balance_type": "credit"
+    },
+    "549": {
+      "tdhp_name": "Ozel Fonlar",
+      "ifrs_category": "equity",
+      "ifrs_line": "Retained Earnings",
+      "ifrs_line_tr": "Dagitilmamis Karlar",
+      "balance_type": "credit"
+    },
+    "570": {
+      "tdhp_name": "Gecmis Yillar Karlari",
+      "ifrs_category": "equity",
+      "ifrs_line": "Retained Earnings",
+      "ifrs_line_tr": "Dagitilmamis Karlar",
+      "balance_type": "credit"
+    },
+    "580": {
+      "tdhp_name": "Gecmis Yillar Zararlari (-)",
+      "ifrs_category": "equity",
+      "ifrs_line": "Retained Earnings",
+      "ifrs_line_tr": "Dagitilmamis Karlar",
+      "balance_type": "debit"
+    },
+    "590": {
+      "tdhp_name": "Donem Net Kari",
+      "ifrs_category": "equity",
+      "ifrs_line": "Net Income for the Period",
+      "ifrs_line_tr": "Donem Net Kari",
+      "balance_type": "credit"
+    },
+    "591": {
+      "tdhp_name": "Donem Net Zarari (-)",
+      "ifrs_category": "equity",
+      "ifrs_line": "Net Income for the Period",
+      "ifrs_line_tr": "Donem Net Kari",
+      "balance_type": "debit"
+    },
+    "600": {
+      "tdhp_name": "Yurtici Satislar",
+      "ifrs_category": "revenue",
+      "ifrs_line": "Revenue",
+      "ifrs_line_tr": "Hasilat",
+      "balance_type": "credit"
+    },
+    "601": {
+      "tdhp_name": "Yurtdisi Satislar",
+      "ifrs_category": "revenue",
+      "ifrs_line": "Revenue",
+      "ifrs_line_tr": "Hasilat",
+      "balance_type": "credit"
+    },
+    "602": {
+      "tdhp_name": "Diger Gelirler",
+      "ifrs_category": "revenue",
+      "ifrs_line": "Revenue",
+      "ifrs_line_tr": "Hasilat",
+      "balance_type": "credit"
+    },
+    "610": {
+      "tdhp_name": "Satistan Iadeler (-)",
+      "ifrs_category": "revenue",
+      "ifrs_line": "Revenue",
+      "ifrs_line_tr": "Hasilat",
+      "balance_type": "debit"
+    },
+    "611": {
+      "tdhp_name": "Satis Iskontolari (-)",
+      "ifrs_category": "revenue",
+      "ifrs_line": "Revenue",
+      "ifrs_line_tr": "Hasilat",
+      "balance_type": "debit"
+    },
+    "612": {
+      "tdhp_name": "Diger Indirimler (-)",
+      "ifrs_category": "revenue",
+      "ifrs_line": "Revenue",
+      "ifrs_line_tr": "Hasilat",
+      "balance_type": "debit"
+    },
+    "620": {
+      "tdhp_name": "Satilan Mamuller Maliyeti (-)",
+      "ifrs_category": "cost_of_sales",
+      "ifrs_line": "Cost of Sales",
+      "ifrs_line_tr": "Satis Maliyeti",
+      "balance_type": "debit"
+    },
+    "621": {
+      "tdhp_name": "Satilan Ticari Mallar Maliyeti (-)",
+      "ifrs_category": "cost_of_sales",
+      "ifrs_line": "Cost of Sales",
+      "ifrs_line_tr": "Satis Maliyeti",
+      "balance_type": "debit"
+    },
+    "622": {
+      "tdhp_name": "Satilan Hizmet Maliyeti (-)",
+      "ifrs_category": "cost_of_sales",
+      "ifrs_line": "Cost of Sales",
+      "ifrs_line_tr": "Satis Maliyeti",
+      "balance_type": "debit"
+    },
+    "623": {
+      "tdhp_name": "Diger Satislarin Maliyeti (-)",
+      "ifrs_category": "cost_of_sales",
+      "ifrs_line": "Cost of Sales",
+      "ifrs_line_tr": "Satis Maliyeti",
+      "balance_type": "debit"
+    },
+    "630": {
+      "tdhp_name": "Arastirma ve Gelistirme Giderleri (-)",
+      "ifrs_category": "operating_expenses",
+      "ifrs_line": "Research and Development Expenses",
+      "ifrs_line_tr": "Arastirma ve Gelistirme Giderleri",
+      "balance_type": "debit"
+    },
+    "631": {
+      "tdhp_name": "Pazarlama Satis ve Dagitim Giderleri (-)",
+      "ifrs_category": "operating_expenses",
+      "ifrs_line": "Selling and Distribution Expenses",
+      "ifrs_line_tr": "Pazarlama Satis ve Dagitim Giderleri",
+      "balance_type": "debit"
+    },
+    "632": {
+      "tdhp_name": "Genel Yonetim Giderleri (-)",
+      "ifrs_category": "operating_expenses",
+      "ifrs_line": "General and Administrative Expenses",
+      "ifrs_line_tr": "Genel Yonetim Giderleri",
+      "balance_type": "debit"
+    },
+    "640": {
+      "tdhp_name": "Istiraklerden Temettu Gelirleri",
+      "ifrs_category": "other_income",
+      "ifrs_line": "Dividend Income",
+      "ifrs_line_tr": "Temettu Gelirleri",
+      "balance_type": "credit"
+    },
+    "642": {
+      "tdhp_name": "Faiz Gelirleri",
+      "ifrs_category": "finance_income",
+      "ifrs_line": "Finance Income",
+      "ifrs_line_tr": "Finansman Gelirleri",
+      "balance_type": "credit"
+    },
+    "643": {
+      "tdhp_name": "Komisyon Gelirleri",
+      "ifrs_category": "other_income",
+      "ifrs_line": "Other Operating Income",
+      "ifrs_line_tr": "Diger Faaliyet Gelirleri",
+      "balance_type": "credit"
+    },
+    "644": {
+      "tdhp_name": "Konusu Kalmayan Karsiliklar",
+      "ifrs_category": "other_income",
+      "ifrs_line": "Other Operating Income",
+      "ifrs_line_tr": "Diger Faaliyet Gelirleri",
+      "balance_type": "credit"
+    },
+    "645": {
+      "tdhp_name": "Menkul Kiymet Satis Karlari",
+      "ifrs_category": "other_income",
+      "ifrs_line": "Gain on Sale of Financial Assets",
+      "ifrs_line_tr": "Finansal Varlik Satis Karlari",
+      "balance_type": "credit"
+    },
+    "646": {
+      "tdhp_name": "Kambiyo Karlari",
+      "ifrs_category": "finance_income",
+      "ifrs_line": "Foreign Exchange Gains",
+      "ifrs_line_tr": "Kur Farki Gelirleri",
+      "balance_type": "credit"
+    },
+    "647": {
+      "tdhp_name": "Reeskont Faiz Gelirleri",
+      "ifrs_category": "finance_income",
+      "ifrs_line": "Finance Income",
+      "ifrs_line_tr": "Finansman Gelirleri",
+      "balance_type": "credit"
+    },
+    "648": {
+      "tdhp_name": "Enflasyon Duzeltmesi Karlari",
+      "ifrs_category": "other_income",
+      "ifrs_line": "Other Operating Income",
+      "ifrs_line_tr": "Diger Faaliyet Gelirleri",
+      "balance_type": "credit"
+    },
+    "649": {
+      "tdhp_name": "Diger Olagan Gelir ve Karlar",
+      "ifrs_category": "other_income",
+      "ifrs_line": "Other Operating Income",
+      "ifrs_line_tr": "Diger Faaliyet Gelirleri",
+      "balance_type": "credit"
+    },
+    "653": {
+      "tdhp_name": "Komisyon Giderleri (-)",
+      "ifrs_category": "other_expense",
+      "ifrs_line": "Other Operating Expenses",
+      "ifrs_line_tr": "Diger Faaliyet Giderleri",
+      "balance_type": "debit"
+    },
+    "654": {
+      "tdhp_name": "Karsilik Giderleri (-)",
+      "ifrs_category": "other_expense",
+      "ifrs_line": "Other Operating Expenses",
+      "ifrs_line_tr": "Diger Faaliyet Giderleri",
+      "balance_type": "debit"
+    },
+    "655": {
+      "tdhp_name": "Menkul Kiymet Satis Zararlari (-)",
+      "ifrs_category": "other_expense",
+      "ifrs_line": "Loss on Sale of Financial Assets",
+      "ifrs_line_tr": "Finansal Varlik Satis Zararlari",
+      "balance_type": "debit"
+    },
+    "656": {
+      "tdhp_name": "Kambiyo Zararlari (-)",
+      "ifrs_category": "finance_costs",
+      "ifrs_line": "Foreign Exchange Losses",
+      "ifrs_line_tr": "Kur Farki Giderleri",
+      "balance_type": "debit"
+    },
+    "657": {
+      "tdhp_name": "Reeskont Faiz Giderleri (-)",
+      "ifrs_category": "finance_costs",
+      "ifrs_line": "Finance Costs",
+      "ifrs_line_tr": "Finansman Giderleri",
+      "balance_type": "debit"
+    },
+    "658": {
+      "tdhp_name": "Enflasyon Duzeltmesi Zararlari (-)",
+      "ifrs_category": "other_expense",
+      "ifrs_line": "Other Operating Expenses",
+      "ifrs_line_tr": "Diger Faaliyet Giderleri",
+      "balance_type": "debit"
+    },
+    "659": {
+      "tdhp_name": "Diger Olagan Gider ve Zararlar (-)",
+      "ifrs_category": "other_expense",
+      "ifrs_line": "Other Operating Expenses",
+      "ifrs_line_tr": "Diger Faaliyet Giderleri",
+      "balance_type": "debit"
+    },
+    "660": {
+      "tdhp_name": "Kisa Vadeli Borclanma Giderleri (-)",
+      "ifrs_category": "finance_costs",
+      "ifrs_line": "Finance Costs",
+      "ifrs_line_tr": "Finansman Giderleri",
+      "balance_type": "debit"
+    },
+    "661": {
+      "tdhp_name": "Uzun Vadeli Borclanma Giderleri (-)",
+      "ifrs_category": "finance_costs",
+      "ifrs_line": "Finance Costs",
+      "ifrs_line_tr": "Finansman Giderleri",
+      "balance_type": "debit"
+    },
+    "671": {
+      "tdhp_name": "Onceki Donem Gelir ve Karlari",
+      "ifrs_category": "other_income",
+      "ifrs_line": "Other Income",
+      "ifrs_line_tr": "Diger Gelirler",
+      "balance_type": "credit"
+    },
+    "679": {
+      "tdhp_name": "Diger Olagan Disi Gelir ve Karlar",
+      "ifrs_category": "other_income",
+      "ifrs_line": "Other Income",
+      "ifrs_line_tr": "Diger Gelirler",
+      "balance_type": "credit"
+    },
+    "680": {
+      "tdhp_name": "Calisılmayan Kisim Gider ve Zararlari (-)",
+      "ifrs_category": "other_expense",
+      "ifrs_line": "Other Expenses",
+      "ifrs_line_tr": "Diger Giderler",
+      "balance_type": "debit"
+    },
+    "681": {
+      "tdhp_name": "Onceki Donem Gider ve Zararlari (-)",
+      "ifrs_category": "other_expense",
+      "ifrs_line": "Other Expenses",
+      "ifrs_line_tr": "Diger Giderler",
+      "balance_type": "debit"
+    },
+    "689": {
+      "tdhp_name": "Diger Olagan Disi Gider ve Zararlari (-)",
+      "ifrs_category": "other_expense",
+      "ifrs_line": "Other Expenses",
+      "ifrs_line_tr": "Diger Giderler",
+      "balance_type": "debit"
+    },
+    "690": {
+      "tdhp_name": "Donem Kari veya Zarari",
+      "ifrs_category": "tax_expense",
+      "ifrs_line": "Profit Before Tax",
+      "ifrs_line_tr": "Vergi Oncesi Kar",
+      "balance_type": "credit"
+    },
+    "691": {
+      "tdhp_name": "Donem Kari Vergi ve Diger Yasal Yuk. Karsiliklari (-)",
+      "ifrs_category": "tax_expense",
+      "ifrs_line": "Tax Expense",
+      "ifrs_line_tr": "Vergi Gideri",
+      "balance_type": "debit"
+    },
+    "692": {
+      "tdhp_name": "Donem Net Kari veya Zarari",
+      "ifrs_category": "tax_expense",
+      "ifrs_line": "Net Profit for the Period",
+      "ifrs_line_tr": "Donem Net Kari",
+      "balance_type": "credit"
+    }
+  }
+}

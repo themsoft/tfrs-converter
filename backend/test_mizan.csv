@@ -1,0 +1,50 @@
+Hesap Kodu,Hesap Adı,Borç Bakiye,Alacak Bakiye
+100,Kasa,150000,0
+102,Bankalar,2500000,0
+120,Alıcılar,1800000,0
+121,Alacak Senetleri,500000,0
+128,Şüpheli Ticari Alacaklar,200000,0
+129,Şüpheli Ticari Alacak Karşılığı (-),0,100000
+150,İlk Madde ve Malzeme,350000,0
+153,Ticari Mallar,750000,0
+180,Gelecek Aylara Ait Giderler,80000,0
+190,Devreden KDV,120000,0
+252,Binalar,3000000,0
+253,"Tesis, Makine ve Cihazlar",2000000,0
+254,Taşıtlar,800000,0
+255,Demirbaşlar,400000,0
+257,Birikmiş Amortismanlar (-),0,1500000
+260,Haklar,300000,0
+264,Özel Maliyetler,200000,0
+268,Birikmiş İtfalar (-),0,150000
+300,Banka Kredileri,0,1200000
+320,Satıcılar,0,1400000
+321,Borç Senetleri,0,300000
+335,Personele Borçlar,0,250000
+340,Alınan Avanslar,0,180000
+360,Ödenecek Vergi ve Fonlar,0,320000
+361,Ödenecek SGK Kesintileri,0,150000
+370,Dönem Karı Vergi Karşılığı,0,280000
+372,Kıdem Tazminatı Karşılığı,0,200000
+400,Banka Kredileri (Uzun Vadeli),0,2000000
+472,Kıdem Tazminatı Karşılığı (Uzun),0,500000
+500,Sermaye,0,2000000
+540,Yasal Yedekler,0,300000
+570,Geçmiş Yıllar Karları,0,800000
+590,Dönem Net Karı,0,520000
+600,Yurtiçi Satışlar,0,8500000
+601,Yurtdışı Satışlar,0,1500000
+610,Satıştan İadeler (-),250000,0
+611,Satış İskontoları (-),150000,0
+620,Satılan Mamüller Maliyeti (-),5200000,0
+621,Satılan Ticari Mallar Maliyeti (-),1300000,0
+630,Ar-Ge Giderleri (-),200000,0
+631,Pazarlama Giderleri (-),450000,0
+632,Genel Yönetim Giderleri (-),680000,0
+642,Faiz Gelirleri,0,180000
+646,Kambiyo Karları,0,320000
+654,Karşılık Giderleri (-),150000,0
+656,Kambiyo Zararları (-),280000,0
+660,Kısa Vadeli Borçlanma Giderleri (-),350000,0
+661,Uzun Vadeli Borçlanma Giderleri (-),250000,0
+691,Dönem Karı Vergi Karşılıkları (-),280000,0

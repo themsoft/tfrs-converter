@@ -1,0 +1,39 @@
+﻿Hesap Kodu,Hesap Adi,Borc Bakiye,Alacak Bakiye
+100,Kasa,25000.00,0.00
+102,Bankalar,2971000.00,0.00
+120,Alicilar,890000.00,0.00
+128,Supheli Ticari Alacaklar,120000.00,0.00
+129,Supheli Ticari Alacak Karsiligi (-),0.00,45000.00
+153,Ticari Mallar,670000.00,0.00
+180,Gelecek Aylara Ait Giderler,36000.00,0.00
+252,Binalar,3200000.00,0.00
+253,"Tesis, Makine ve Cihazlar",1850000.00,0.00
+254,Tasitlar,480000.00,0.00
+255,Demirbaslar,210000.00,0.00
+257,Birikmis Amortismanlar (-),0.00,1420000.00
+260,Haklar,150000.00,0.00
+268,Birikmis Itfa Paylari (-),0.00,60000.00
+300,Banka Kredileri,0.00,750000.00
+320,Saticilar,0.00,620000.00
+335,Personele Borclar,0.00,185000.00
+360,Odenecek Vergi ve Fonlar,0.00,95000.00
+361,Odenecek Sosyal Guvenlik Kesintileri,0.00,72000.00
+370,Donem Kari Vergi ve Diger Yasal Yuk. Kars.,0.00,280000.00
+372,Kidem Tazminati Karsiligi,0.00,145000.00
+400,Banka Kredileri (Uzun Vadeli),0.00,1200000.00
+472,Kidem Tazminati Karsiligi (Uzun Vadeli),0.00,320000.00
+500,Sermaye,0.00,2000000.00
+540,Yasal Yedekler,0.00,180000.00
+570,Gecmis Yillar Karlari,0.00,450000.00
+590,Donem Net Kari,0.00,1390000.00
+600,Yurtici Satislar,0.00,8500000.00
+601,Yurtdisi Satislar,0.00,1200000.00
+610,Satistan Iadeler (-),350000.00,0.00
+620,Satilan Mamul Maliyeti,5800000.00,0.00
+631,Pazarlama Satis Dagitim Giderleri,680000.00,0.00
+632,Genel Yonetim Giderleri,920000.00,0.00
+642,Faiz Gelirleri,0.00,85000.00
+646,Kambiyo Karlari,0.00,120000.00
+656,Kambiyo Zararlari,195000.00,0.00
+660,Kisa Vadeli Borclanma Giderleri,290000.00,0.00
+691,Donem Kari Vergi Karsiligi,280000.00,0.00
